@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Here](https://your-solution-url.com)
-- Live Site URL: [Here](https://your-live-site-url.com)
+- Solution URL: [Here](https://www.frontendmentor.io/solutions/stats-preview-card-mobile-first-webpage-SLSb5aA2c)
+- Live Site URL: [Here](https://tscorpz.github.io/stats-preview-card/)
 
 ## My process
 
