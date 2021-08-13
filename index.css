@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: hsl(233, 47%, 7%);
+    color: white;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10vh;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+    background: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-family: Inter;
+    margin: 2rem 0;
+}
+
+p {
+    color:hsla(0, 0%, 100%, 0.6)
+}
+
+a {
+    text-decoration: none;
+    color: darksalmon;
+}
+
+.main-content {
+    margin: 1rem;
+}
+
+.accent {
+    color: hsl(277, 64%, 50%);
+}
+
+.stats {
+    margin: 20px 0;
+    line-height: 35px;
+    font-family: LexendDeca;
+}
+
+.inner {
+    width: 90vw;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.purple {
+    background-color: hsl(277, 64%, 50%);
+}
+
+.illustration {
+    width: 100%;
+    min-height: 150px;
+    height: calc(100vw / 4 * 2.5);
+    background-image: url('images/image-header-mobile.jpg');  
+    background-size: cover;
+    border-radius: 10px 10px 0 0 ;
+    filter: saturate(60%) contrast(70%);
+}
+
+.color {
+    mix-blend-mode: color;
+}
+
+footer {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.fade-in{
+    animation:opac 3s
+}
+
+@keyframes opac{
+    from{opacity:0} 
+    to{opacity:1}
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('/fonts/Inter/static/Inter-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('/fonts/Inter/static/Inter-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: LexendDeca;
+    src: url('/fonts/Lexend_Deca/LexendDeca-Regular.ttf');
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0;
+    }
+    .main-content {
+        width: 50%;
+    }
+    .main-content>h1, .main-content>p {
+        padding: 0 30px;
+    }
+    .stats {
+        display: flex;
+        margin: 40px 40px 0 40px;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .illustration {
+        width: 50%;
+        background-image: url('images/image-header-desktop.jpg');  
+        background-repeat: no-repeat;
+        height: 100%;
+        height: calc(100vw / 3);
+        border-radius: 0 10px 10px 0;
+    }
+    .inner {
+        width: 100%;
+        height: calc(100vw / 3);
+        border-radius: 0 10px 10px 0;
+    }
+}
